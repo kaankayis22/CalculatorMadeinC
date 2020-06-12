@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main(void) 
+{
+printf("Welcome to Kaan's Calculator. Please Wait... \n\n");
+
+int option;
+printf("What operation will you like to use? 1) Addition 2)Subtraction 3) Multiplication 4) Divison: ");
+scanf("%d",&option);
+
+
+int num1;
+printf("Enter the first number: ");
+scanf("%d",&num1);
+
+int num2;
+printf("Enter the second number: ");
+scanf("%d",&num2);
+
+int answer;
+
+if (option==1) 
+{
+  answer=num1+num2;
+}
+if (option==2) 
+{
+  answer=num1-num2;
+}
+if (option==3) 
+{
+  answer=num1*num2;
+}
+if (option==4) 
+{
+  answer=num1/num2;
+}
+
+printf("%d\n",answer);
+
+if (option>=5)
+{
+  printf("Since you do not want to follow my directions, you do not get to use my calculator.\n");
+}
+}
